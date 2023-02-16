@@ -5,7 +5,7 @@ dotenv.config();
 export default {
   port: 1337,
   host: 'localhost',
-  dbUri: 'mongodb://localhost:27017/ts-crud-one',
+  dbUri: 'mongodb://127.0.0.1:27017/ts-crud-one',
   saltWorkFactor: 10,
   accessTokenTtl: 3600,
   refreshTokenTtl: 60,

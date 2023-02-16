@@ -12,10 +12,13 @@ function dbConnect() {
       useUnifiedTopology: true,
     } as ConnectOptions)
     .then(() => {
-      log.info('Database connected');
+      // log.info('Database connected');
+      console.log('Database connected');
     })
     .catch((err) => {
-      log.error('DB connect error due to ', err.message), process.exit(1);
+      // console.log('DB connect error due to ', err.message);
+      log.error('DB connect error due to ', err.message);
+      process.exit(1);
     });
 }
 
