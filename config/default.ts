@@ -3,9 +3,9 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export default {
-  port: 1337,
-  host: 'localhost',
-  dbUri: 'mongodb://127.0.0.1:27017/ts-crud-one',
+  port: Number(process.env.port) ,
+  host: process.env.host,
+  dbUri: process.env.dbUri,
   saltWorkFactor: 10,
   accessTokenTtl: 3600,
   refreshTokenTtl: 60,
