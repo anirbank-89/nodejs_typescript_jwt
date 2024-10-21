@@ -40,7 +40,7 @@ export async function loginUser(req: Request, res: Response) {
     // create a session - service
     const session = await createSession(user._id, req.get('user-agent') || '');
 
-    // create access token - utils
+    // create access token - service
     const accessToken = createAccessToken({ user, session });
 
     // create refresh token - utils

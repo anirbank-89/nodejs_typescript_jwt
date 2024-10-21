@@ -19,8 +19,8 @@ const PostSchema = new mongoose.Schema(
     //   default: () => nanoid(10),
     // },
     user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-    title: { type: String, default: true },
-    description: { type: String, default: true },
+    title: { type: String, required: true },
+    description: { type: String, required: true },
   },
   { timestamps: true }
 );
